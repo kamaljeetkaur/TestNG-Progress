@@ -31,11 +31,11 @@ public class NewTest extends WebDriverManager {
 		Assert.assertTrue(title.contains("Free Selenium Tutorials"));       
 	}  
 
-	@Test   
+/*	@Test   
 	public void testText() throws Exception {    
 			WebElement page = driver.findElement(By.xpath("//*[@id='rt-mainbody']/div/article/h2"));              
 			Assert.assertTrue(page.getText().contains("1Free Selenium Tutorials")); 
 			driver.findElement(By.id("testing")).sendKeys("test");
-	}
+	}*/
 	
 }

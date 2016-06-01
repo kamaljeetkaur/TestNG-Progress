@@ -1,7 +1,5 @@
 package com.rd.listener;
 
-import java.io.BufferedWriter;
-import java.io.IOException;
 import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
@@ -13,7 +11,6 @@ import com.rd.WebDriverManager;
 
 public class TestListener implements ITestListener {
 	WebDriver driver=null;
-	String filePath = "D:\\SCREENSHOTS";
 	String file = System.getProperty("user.dir")+"\\"+"screenshot"+ (new Random().nextInt())+".png"; 
 
 	@Override
@@ -28,9 +25,6 @@ public class TestListener implements ITestListener {
 		}
 		
 	}
-		
-	
-
 
 public void onFinish(ITestContext context) {System.out.println("END Of Execution(TEST)->"+context.getName());}
 
